@@ -1,7 +1,7 @@
 [user]
 	email = itq.dev@ya.ru
 	name = ITQ
-    signingkey = B13C2DAF24268258F525697A063A10A651314CE9
+	signingkey = B13C2DAF24268258F525697A063A10A651314CE9
 [init]
 	defaultBranch = main
 [core]
@@ -14,7 +14,7 @@
 	default = matching
 [commit]
 	template = ~/.gitmessage.txt
-    gpgsign = true
+	gpgsign = true
 [color]
 	ui = auto
 [color "branch"]
@@ -243,8 +243,6 @@
 	gpgsign = true
 [gpg]
 	program = gpg
-[credential]
-	helper = store
 [advice]
 	detachedHead = false
 

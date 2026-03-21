@@ -1,2 +1,0 @@
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.gitmessage.txt ~/.gitmessage.txt

@@ -15,14 +15,14 @@ _get_clip_cmd() {
 cs() {
   local output clip_cmd
   clip_cmd=$(_get_clip_cmd) || return 1
-  
+
   if [ $# -eq 0 ]; then
     output=$(cat && printf X)
     output=${output%X}
   else
     output=$("$@")
   fi
-  
+
   printf '%s' "$output"
   printf '%s' "$output" | eval "$clip_cmd"
 }
@@ -30,14 +30,14 @@ cs() {
 cse() {
   local output clip_cmd
   clip_cmd=$(_get_clip_cmd) || return 1
-  
+
   if [ $# -eq 0 ]; then
     output=$(cat && printf X)
     output=${output%X}
   else
     output=$("$@" 2>&1)
   fi
-  
+
   printf '%s' "$output"
   printf '%s' "$output" | eval "$clip_cmd"
 }

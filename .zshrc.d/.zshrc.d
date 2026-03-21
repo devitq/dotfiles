@@ -1,0 +1,1 @@
+/Users/itq/dotfiles/.zshrc.d

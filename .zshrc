@@ -106,12 +106,6 @@ export TALOSCONFIG=/Users/itq/.talos/config
 alias tf=terraform
 alias calc='_(){ awk "BEGIN{print $*}";};_'
 alias dive='docker run -ti --rm -v /var/run/docker.sock:/var/run/docker.sock docker.io/wagoodman/dive'
-alias ktx=kubectx
-alias kns=kubens
-alias k=kubectl
-alias ktop='watch -n 0.5 -d -c kubectl top pod -A --containers=true --show-swap=true --sort-by=memory --sum=true'
-alias ka='kubectl apply -f'
-alias kd='kubectl delete -f'
 alias cdt='cd $(mktemp -d)'
 alias c=clear
 alias ipy='ipython --no-autoindent'
@@ -119,13 +113,24 @@ alias py='python3'
 alias bat='bat --style=plain'
 alias netshoot='docker run -it --rm --net host docker.io/nicolaka/netshoot:latest'
 alias vim='nvim'
-# InfoSec aliases
-alias dirsearch=/Users/itq/infosec/tools/dirsearch/.venv/bin/dirsearch
-alias pwn=/Users/itq/infosec/tools/pwntools/.venv/bin/pwn
-alias pwni=/Users/itq/infosec/tools/pwntools/.venv/bin/python
-alias vol2='python2 /Users/itq/infosec/tools/volatility_2/vol.py'
-alias vol3=/Users/itq/infosec/tools/volatility_3/.venv/bin/vol
+alias yz=''
+# K8S
+alias ktx=kubectx
+alias kns=kubens
+alias k=kubectl
+alias ktop='watch -n 0.5 -d -c kubectl top pod -A --containers=true --show-swap=true --sort-by=memory --sum=true'
+alias ka='kubectl apply -f'
+alias kd='kubectl delete -f'
+# InfoSec Aliases
+alias dirsearch=/Users/itq/Infosec/tools/dirsearch/.venv/bin/dirsearch
+alias pwn=/Users/itq/Infosec/tools/pwntools/.venv/bin/pwn
+alias pwni=/Users/itq/Infosec/tools/pwntools/.venv/bin/python
+alias vol2='python2 /Users/itq/Infosec/tools/volatility_2/vol.py'
+alias vol3=/Users/itq/Infosec/tools/volatility_3/.venv/bin/vol
 alias stegoveritas='docker run -it --rm -v /:/mnt bannsec/stegoveritas'
+alias jadx='java -jar /Users/itq/Infosec/tools/jadx-1.5.5-all.jar'
+alias jd-gui='java -jar /Users/itq/Infosec/tools/jd-gui-1.6.6-min.jar'
+alias пороль='head -c64 /dev/random | base64 | tr -d "/" | head -c32'
 
 # Brew
 HOMEBREW_NO_AUTO_UPDATE=1
