@@ -103,7 +103,8 @@ export SYSTEMD_PAGER=
 export TALOSCONFIG=/Users/itq/.talos/config
 
 # Aliases
-alias tf=terraform
+alias please='sudo'
+alias tf='terraform'
 alias calc='_(){ awk "BEGIN{print $*}";};_'
 alias dive='docker run -ti --rm -v /var/run/docker.sock:/var/run/docker.sock docker.io/wagoodman/dive'
 alias cdt='cd $(mktemp -d)'
@@ -114,6 +115,9 @@ alias bat='bat --style=plain'
 alias netshoot='docker run -it --rm --net host docker.io/nicolaka/netshoot:latest'
 alias vim='nvim'
 alias yz=''
+alias jpy='jupyter lab --port 8888 --IdentityProvider.token "" --ip 0.0.0.0'
+alias mtr='orb run -m debian-amd64 mtr'
+alias o2g='oci2git'
 # K8S
 alias ktx=kubectx
 alias kns=kubens
@@ -131,6 +135,10 @@ alias stegoveritas='docker run -it --rm -v /:/mnt bannsec/stegoveritas'
 alias jadx='java -jar /Users/itq/Infosec/tools/jadx-1.5.5-all.jar'
 alias jd-gui='java -jar /Users/itq/Infosec/tools/jd-gui-1.6.6-min.jar'
 alias пороль='head -c64 /dev/random | base64 | tr -d "/" | head -c32'
+# Exercises
+alias awkexercises='/Users/itq/Infosec/tools/exercises/.venv/bin/awkexercises'
+alias grepexercises='/Users/itq/Infosec/tools/exercises/.venv/bin/grepexercises'
+alias sedexercises='/Users/itq/Infosec/tools/exercises/.venv/bin/sedexercises'
 
 # Brew
 HOMEBREW_NO_AUTO_UPDATE=1
