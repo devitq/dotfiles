@@ -55,7 +55,7 @@ yabai -m config top_padding 1
 yabai -m config bottom_padding 1
 yabai -m config right_padding 1
 yabai -m config left_padding 1
-yabai -m config window_gap 10
+yabai -m config window_gap 3
 # mouse settings
 # yabai -m config mouse_follows_focus on
 yabai -m config mouse_modifier alt
