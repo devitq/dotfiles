@@ -1,6 +1,12 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+local mason_bin = vim.fn.stdpath("data") .. "/mason/bin"
+local path = vim.env.PATH or ""
+if not string.find(path, mason_bin, 1, true) then
+    vim.env.PATH = mason_bin .. ":" .. path
+end
+
 local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
@@ -28,4 +34,3 @@ opt.timeoutlen = 400
 
 opt.clipboard = "unnamedplus"
 opt.undofile = true
-

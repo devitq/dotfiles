@@ -9,4 +9,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- optional: auto format on save (handled by conform too, but this is a safe place for extra logic later)
-
